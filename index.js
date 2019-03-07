@@ -9,7 +9,7 @@ let Todo = require('./todo.model');
 app.use(bodyParser.json());
 
 const config = require('./db');
-const PORT = 4200 || process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 mongoose.connect(config.DB,{useNewUrlParser: true});
 
